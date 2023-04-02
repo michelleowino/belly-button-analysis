@@ -20,7 +20,7 @@ const optionChanged = () => {
     // Display metadata
     d3.select('.panel-body').html('');
     Object.entries(meta).forEach(([key, val]) => {
-      d3.select('.panel-body').append('h4').text(`${key.toUpperCase()}: ${val}`);
+      d3.select('.panel-body').append('h4').text(`${key.toLowerCase()}: ${val}`);
     });
 
     // Display charts
